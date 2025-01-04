@@ -51,21 +51,21 @@ Here are some examples of how to run the application:
 1.  **Download the entire file:**
 
     ```bash
-    java -jar build/libs/FigmaAPI-1.0-SNAPSHOT.jar --file-key <your_file_key> --download-type file
+    java -jar build/libs/FigmaAPI-1.0-SNAPSHOT-all.jar --file-key <your_file_key> --download-type file
     ```
     This will download the file and save it to `file_response.json`.
 
 2.  **Download specific nodes:**
 
     ```bash
-     java -jar build/libs/FigmaAPI-1.0-SNAPSHOT.jar --file-key <your_file_key> --node-ids <node_id1>,<node_id2>,<node_id3> --download-type nodes
+     java -jar build/libs/FigmaAPI-1.0-SNAPSHOT-all.jar --file-key <your_file_key> --node-ids <node_id1>,<node_id2>,<node_id3> --download-type nodes
     ```
     This will download the specified nodes and save it to `nodes_response.json`.
 
 3.  **Download file using access token from command line**
 
     ```bash
-     java -jar build/libs/FigmaAPI-1.0-SNAPSHOT.jar --file-key <your_file_key> --download-type file --access-token <your_access_token>
+     java -jar build/libs/FigmaAPI-1.0-SNAPSHOT-all.jar --file-key <your_file_key> --download-type file --access-token <your_access_token>
     ```
 
 4.  **Using cached token (first time use)**
@@ -75,7 +75,7 @@ Here are some examples of how to run the application:
     * After caching, subsequent runs can be done without access token
 
         ```bash
-         java -jar build/libs/FigmaAPI-1.0-SNAPSHOT.jar --file-key <your_file_key> --download-type file
+         java -jar build/libs/FigmaAPI-1.0-SNAPSHOT-all.jar --file-key <your_file_key> --download-type file
         ```
 
 ### Output
@@ -101,7 +101,3 @@ The application uses SLF4J with Logback for logging. Log messages will be printe
 ## Contributing
 
 Contributions to the project are welcome. Feel free to submit pull requests with improvements or bug fixes.
-
-## License
-
-[Your License Here] (If you have one)
