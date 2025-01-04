@@ -1,4 +1,6 @@
-package co.`in`.acmesense.model
+// Copyright (c) 2024 AcmeSense
+// Licensed under the MIT License. See LICENSE file in the project root for full license info
+package model
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable

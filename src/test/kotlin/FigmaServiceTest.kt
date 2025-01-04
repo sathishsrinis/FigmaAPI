@@ -1,14 +1,15 @@
 package co.`in`.acmesense
 
-import co.`in`.acmesense.auth.FigmaAuthenticator
-import co.`in`.acmesense.client.FigmaClient
+import FigmaService
+import auth.FigmaAuthenticator
+import client.FigmaClient
 import io.mockk.coEvery
 import io.mockk.mockk
 import kotlinx.coroutines.runBlocking
-import co.`in`.acmesense.model.FigmaNode
+import model.FigmaNode
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
-import co.`in`.acmesense.util.JsonUtil
+import util.JsonUtil
 
 class FigmaServiceTest {
 
@@ -22,7 +23,7 @@ class FigmaServiceTest {
 
         val figmaServiceWithMock = FigmaService(mockAuthenticator.getAccessToken(), mockAuthenticator, mockClient)
         val nodesResult = figmaServiceWithMock.getNodes("test_file", listOf("1:1"))
-        assertEquals(nodesResult,JsonUtil.toJson(FigmaNode(nodes=mapOf("1:1" to FigmaNode(name="test")))))
+        assertEquals(nodesResult, JsonUtil.toJson(FigmaNode(nodes=mapOf("1:1" to FigmaNode(name="test")))))
     }
 
     @Test
@@ -35,7 +36,7 @@ class FigmaServiceTest {
 
         val figmaServiceWithMock = FigmaService(mockAuthenticator.getAccessToken(), mockAuthenticator, mockClient)
         val fileResult = figmaServiceWithMock.getFile("test_file")
-        assertEquals(fileResult,JsonUtil.toJson(FigmaNode(name="testFile")))
+        assertEquals(fileResult, JsonUtil.toJson(FigmaNode(name="testFile")))
     }
 
 }

@@ -1,9 +1,9 @@
-package co.`in`.acmesense
-
-import co.`in`.acmesense.auth.FigmaAuthenticator
-import co.`in`.acmesense.client.FigmaClient
-import co.`in`.acmesense.util.JsonUtil
+// Copyright (c) 2024 AcmeSense
+// Licensed under the MIT License. See LICENSE file in the project root for full license info
+import auth.FigmaAuthenticator
+import client.FigmaClient
 import org.slf4j.LoggerFactory
+import util.JsonUtil
 
 class FigmaService(
     accessToken: String,

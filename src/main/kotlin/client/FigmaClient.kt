@@ -1,7 +1,8 @@
-package co.`in`.acmesense.client
+// Copyright (c) 2024 AcmeSense
+// Licensed under the MIT License. See LICENSE file in the project root for full license info
+package client
 
-import co.`in`.acmesense.auth.FigmaAuthenticator
-import co.`in`.acmesense.model.FigmaNode
+import auth.FigmaAuthenticator
 import io.ktor.client.*
 import io.ktor.client.call.*
 import io.ktor.client.engine.cio.*
@@ -10,6 +11,7 @@ import io.ktor.client.request.*
 import io.ktor.http.*
 import io.ktor.serialization.kotlinx.json.*
 import kotlinx.serialization.json.Json
+import model.FigmaNode
 import org.slf4j.LoggerFactory
 
 

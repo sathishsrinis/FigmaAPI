@@ -1,3 +1,6 @@
+// Copyright (c) 2024 AcmeSense
+// Licensed under the MIT License. See LICENSE file in the project root for full license info
+
 package cli
 
 import org.slf4j.LoggerFactory

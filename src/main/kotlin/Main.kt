@@ -1,9 +1,10 @@
+// Copyright (c) 2024 AcmeSense
+// Licensed under the MIT License. See LICENSE file in the project root for full license info
 import auth.AccessHandler
 import cli.CLIHandler
-import co.`in`.acmesense.FigmaService
-import co.`in`.acmesense.util.JsonUtil
 import kotlinx.coroutines.runBlocking
 import org.slf4j.LoggerFactory
+import util.JsonUtil
 
 private val logger = LoggerFactory.getLogger("Main")
 

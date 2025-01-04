@@ -1,4 +1,6 @@
-package co.`in`.acmesense.util
+// Copyright (c) 2024 AcmeSense
+// Licensed under the MIT License. See LICENSE file in the project root for full license info
+package util
 
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
