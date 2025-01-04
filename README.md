@@ -92,8 +92,6 @@ The application uses SLF4J with Logback for logging. Log messages will be printe
 ## Potential Improvements
 
 *   **Configuration File:** Move the auth cache file name to a configuration file rather than having it hardcoded.
-*   **Error Handling:** Add more specific error handling, like handling 404 (Not Found) and rate-limit errors.
-*   **Retry Logic:** Implement retry logic with exponential backoff for handling API rate limits.
 *   **Progress Indicators:** Consider adding progress indicators or spinners while data is being downloaded.
 *   **More API Endpoints:** Expand the application to support more Figma API endpoints (like comments, image exports, etc.).
 *   **Testing:** Add unit and integration tests to ensure the application is stable and correct.
