@@ -2,6 +2,8 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     kotlin("jvm") version "1.9.22"
+    id("application")
+    id("com.github.johnrengelman.shadow") version "8.1.1"
     id("org.jetbrains.kotlin.plugin.serialization") version "1.9.22"
 }
 
@@ -36,5 +38,14 @@ tasks.test {
     useJUnitPlatform()
 }
 
+application{
+    mainClass.set("MainKt")
+}
+
+tasks{
+    shadowJar{
+        archiveBaseName.set("FigmaAPI")
+    }
+}
 
 
